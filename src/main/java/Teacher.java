@@ -37,19 +37,5 @@ public class Teacher extends Person {
             return String.format("My name is %s. I am teaching %d class(es).", this.getName(), count);
         }
     }
-
-    public String teachingHowManyClass(){
-        if (classes == null || classes.size()==0) {
-            return super.introduce()+" I am a Teacher. I teach No Class.";
-        }
-        String c="";
-        for(int i=0;i<classes.size();i++){
-            if(i!=0){
-                c+=", ";
-            }
-            c+=classes.get(i).getNumber();
-        }
-        return super.introduce()+" I am a Teacher. I teach Class "+c+".";
-    }
 }
 

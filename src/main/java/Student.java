@@ -23,7 +23,6 @@ public class Student extends Person {
     }
 
     public void notifyStudent(Student student, StudentClass studentClass) {
-//        String welcomeMessage = introduce() + String.format(" Welcome %s join Class %d. ", student.getName(), studentClass.getNumber());
         String welcomeMessage = String.format(" Welcome %s join Class %d. ", student.getName(), studentClass.getNumber());
         welcomeMessages.add(welcomeMessage);
     }
